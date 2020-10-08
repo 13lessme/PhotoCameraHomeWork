@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+<TableLayout
+    android:id="@+id/TableLay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    tools:ignore = "uselessLeaf">
+    <TableRow android:background="@android:color/background_dark">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher"
+            android:contentDescription="No photo"
+            android:onClick="Image_Click"
+
+            />
+        <TextView
+            android:text="----------------------------"/>
+        <RadioButton
+            android:background="@color/colorPrimary"
+
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            android:textColor="@color/colorPrimary"
+            android:text="12"
+            android:textSize="20sp"/>
+
+    </TableRow>
+
+</TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
